@@ -45,8 +45,13 @@ button {
     background: darkblue;
 }
 
+.reset-btn {
+    background: darkorange;
+}
+
 button:hover {
     cursor: pointer;
+    border: 3px solid black;
 }
 
 button:active {

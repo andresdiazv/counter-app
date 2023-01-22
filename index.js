@@ -1,5 +1,6 @@
 let count = 0;
 let countEl = document.getElementById("count-el");
+let saveEl = document.getElementById("save-el");
 
 function increment() {
   count++;
@@ -12,5 +13,12 @@ function decrement() {
 }
 
 function save() {
-  console.log(count);
+  let countStr = count + " | ";
+  saveEl.textContent += countStr;
+  countEl.textContent = 0;
+  count = 0;
+}
+
+function reset() {
+  saveEl.textContent = "Previous Entries: ";
 }
